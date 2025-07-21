@@ -1,0 +1,231 @@
+import { StyleSheet } from 'react-native';
+import { Colors } from '../../../utils/Colors';
+import {
+  normalizeFont,
+  normalizeHeight,
+  normalizeWidth,
+  pixelSizeX,
+  pixelSizeY,
+} from '../../../utils/index';
+import { Typography } from '../../../utils/typography';
+
+export const useStyles = () => {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: Colors.background,
+    },
+    scrollView: {
+      flex: 1,
+    },
+    scrollContent: {
+      paddingTop: pixelSizeY(20),
+      paddingBottom: pixelSizeY(20),
+    },
+    logoContainer: {
+      alignItems: 'center',
+      marginBottom: pixelSizeY(24),
+    },
+    logoIcon: {
+      width: normalizeWidth(64),
+      height: normalizeHeight(64),
+      backgroundColor: '#5719e5',
+      borderRadius: pixelSizeX(32),
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: pixelSizeY(8),
+    },
+    logoEmoji: {
+      fontSize: normalizeFont(32),
+    },
+    logoText: {
+      fontSize: normalizeFont(16),
+      fontWeight: '600' as const,
+      color: '#5719e5',
+    },
+    header: {
+      alignItems: 'center',
+      paddingHorizontal: pixelSizeX(16),
+      marginBottom: pixelSizeY(20),
+    },
+    title: {
+      fontSize: normalizeFont(28),
+      fontFamily: Typography.fontfamily.jakarta.jakartaBold,
+      color: Colors.black,
+      textAlign: 'center',
+      marginBottom: pixelSizeY(18),
+    },
+    subtitle: {
+      fontSize: normalizeFont(16),
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      color: Colors.black,
+      textAlign: 'center',
+      marginBottom: pixelSizeY(5),
+    },
+    form: {
+      paddingHorizontal: pixelSizeX(16),
+      marginBottom: pixelSizeY(16),
+      gap: pixelSizeX(15),
+    },
+    inputContainer: {
+      marginBottom: pixelSizeY(10),
+    },
+    input: {
+      height: normalizeHeight(64),
+      backgroundColor: Colors.background,
+      color: Colors.black,
+      borderColor: Colors.inputBorder,
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      borderWidth: 1,
+      borderRadius: pixelSizeX(12),
+      paddingHorizontal: pixelSizeX(16),
+      fontSize: normalizeFont(16),
+    },
+    passwordContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: pixelSizeY(10),
+      backgroundColor: Colors.background,
+      borderRadius: pixelSizeX(12),
+    },
+    passwordInput: {
+      flex: 1,
+      height: normalizeHeight(64),
+      borderWidth: 1,
+      borderTopLeftRadius: pixelSizeX(12),
+      borderBottomLeftRadius: pixelSizeX(12),
+      borderRightWidth: 0,
+      paddingHorizontal: pixelSizeX(16),
+      fontSize: normalizeFont(16),
+      color: Colors.black,
+      backgroundColor: Colors.background,
+      borderColor: Colors.inputBorder,
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+    },
+    eyeButton: {
+      height: normalizeHeight(64),
+      width: normalizeWidth(56),
+      backgroundColor: Colors.background,
+      borderColor: Colors.inputBorder,
+      borderWidth: 1,
+      borderTopRightRadius: 12,
+      borderBottomRightRadius: 12,
+      borderLeftWidth: 0,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    eyeIcon: {
+      fontSize: normalizeFont(18),
+    },
+    termsContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: pixelSizeY(16),
+      paddingVertical: pixelSizeY(8),
+    },
+    checkbox: {
+      width: normalizeWidth(20),
+      height: normalizeHeight(20),
+      borderWidth: 2,
+      borderColor: Colors.secondaryGrey,
+      borderRadius: 4,
+      marginRight: pixelSizeX(12),
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: Colors.secondaryGrey,
+    },
+    checkboxChecked: {
+      backgroundColor: Colors.primary,
+      borderColor: Colors.primary,
+    },
+    checkmark: {
+      color: Colors.white,
+      fontSize: normalizeFont(12),
+      fontWeight: 'bold' as const,
+    },
+    termsText: {
+      fontSize: normalizeFont(16),
+      color: Colors.black,
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      flex: 1,
+      lineHeight: normalizeFont(24),
+    },
+    signUpButton: {
+      height: normalizeHeight(52),
+      backgroundColor: Colors.primary,
+      borderRadius: 12,
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginBottom: pixelSizeY(9),
+    },
+    signUpButtonText: {
+      fontSize: normalizeFont(16),
+      fontFamily: Typography.fontfamily.jakarta.jakartaBold,
+      color: Colors.white,
+    },
+    orText: {
+      fontSize: normalizeFont(14),
+      color: Colors.placeholder,
+      textAlign: 'center',
+      marginBottom: pixelSizeX(16),
+    },
+    socialContainer: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: pixelSizeX(12),
+      marginBottom: pixelSizeY(8),
+    },
+    socialButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      height: normalizeHeight(45),
+      paddingHorizontal: pixelSizeX(16),
+      backgroundColor: Colors.secondaryGrey,
+      borderRadius: pixelSizeX(20),
+      minWidth: normalizeWidth(120),
+    },
+    socialIconContainer: {
+      width: normalizeWidth(24),
+      height: normalizeHeight(24),
+      alignItems: 'center',
+      justifyContent: 'center',
+      marginRight: pixelSizeX(6),
+    },
+    googleIcon: {
+      fontSize: normalizeFont(16),
+      fontWeight: 'bold' as const,
+      color: '#4285f4',
+    },
+    appleIcon: {
+      fontSize: normalizeFont(16),
+    },
+    socialText: {
+      fontSize: normalizeFont(14),
+      fontWeight: 'bold' as const,
+      color: Colors.black,
+    },
+    footer: {
+      alignItems: 'center',
+      paddingHorizontal: pixelSizeX(16),
+      paddingVertical: pixelSizeY(28),
+    },
+    footerText: {
+      fontSize: normalizeFont(16),
+      color: Colors.grey,
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      textAlign: 'center',
+    },
+    signInText: {
+      fontSize: normalizeFont(Typography.fontSize.md),
+      color: Colors.primary,
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      textDecorationLine: 'underline',
+    },
+    error: {
+      fontSize: normalizeFont(13),
+      fontFamily: Typography.fontfamily.jakarta.jakartaRegular,
+      color: Colors.error,
+    },
+  });
+};

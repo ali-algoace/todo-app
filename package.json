@@ -10,9 +10,20 @@
     "test": "jest"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "@react-native/new-app-screen": "0.80.1",
+    "@react-navigation/bottom-tabs": "^7.4.2",
+    "@react-navigation/drawer": "^7.5.3",
+    "@react-navigation/native": "^7.1.14",
+    "@react-navigation/stack": "^7.4.2",
     "react": "19.1.0",
+    "react-hook-form": "^7.48.2",
+    "react-i18next": "^15.6.0",
     "react-native": "0.80.1",
-    "@react-native/new-app-screen": "0.80.1"
+    "react-native-confirmation-code-field": "^8.0.1",
+    "react-native-mmkv": "^3.3.0",
+    "zod": "^3.22.4",
+    "zustand": "^5.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
